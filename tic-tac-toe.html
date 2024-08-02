@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="./tic-toc-toe.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div id="status">Please login to start the game.</div>
+
+    <div id="registration" class="form-container">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" id="registerName" placeholder="Name" required>
+        <input type="number" id="registerAge" placeholder="Age" required>
+        <input type="date" id="registerDOB" placeholder="Date of Birth" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div id="login" class="form-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" id="loginName" placeholder="Name" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div id="game" class="game-container" style="display: none;">
+      <div class="player-info">
+        <span id="player1">Player 1: </span> vs <span id="player2">Player 2: </span>
+      </div>
+      <div class="board" id="board">
+        <div class="cell" data-cell-id="0"></div>
+        <div class="cell" data-cell-id="1"></div>
+        <div class="cell" data-cell-id="2"></div>
+        <div class="cell" data-cell-id="3"></div>
+        <div class="cell" data-cell-id="4"></div>
+        <div class="cell" data-cell-id="5"></div>
+        <div class="cell" data-cell-id="6"></div>
+        <div class="cell" data-cell-id="7"></div>
+        <div class="cell" data-cell-id="8"></div>
+      </div>
+      <button id="reset">Reset Game</button>
+      <div class="stats" id="stats">
+        <h3>Player Statistics</h3>
+        <div id="playerStats"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./tic-tac-toe.js">
+    
+  </script>
+</body>
+</html>
