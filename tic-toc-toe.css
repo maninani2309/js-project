@@ -1,61 +1,152 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image:url(./tac-bg.webp);
+}
 
-  .container {
-    text-align: center;
-  }
+.container {
+  text-align: center;
+}
 
-  .board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 5px;
-    margin: 20px auto;
-    justify-content: center;
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  justify-content: center;
 
-  }
+}
 
-  .cell {
-    background-color: lightblue;
-    border: 1px solid gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 36px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    height: 100px;
+.cell {
+  background-color: lightblue;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 100px;
 
-  }
+}
 
-  .cell:hover {
-    background-color: lightcyan;
-  }
+.cell:hover {
+  background-color: lightcyan;
+}
 
-  #status {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+#status {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: antiquewhite;
+}
 
-  #reset {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-  }
+#reset {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-  .form-container {
-    margin-bottom: 20px;
-  }
-  #playerStats{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;   
-  }
+.form-container {
+  margin-bottom: 20px;
+}
+#playerStats{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;   
+}
+h1{
+  color: white;
+  font-size: 60px;
+}
+h2{
+  color: beige;
+  font-size: 30px;
+  font-family: Geneva;
+}
+input{
+  border-radius: 50vh;
+  height: 30px;
+  width: 200px;
+  
+}
+label{
+  color: white;
+}
+#registerForm input{
+  width: 250px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+#loginForm input{
+  width: 250px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+#register{
+  width: 250px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 2px solid #fff;
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  left: 310px;
+  top: 10px;
+}
+.login{
+  width: 250px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 2px solid #fff;
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  left: 310px;
+  top: 10px;
+}
+span{
+  color: #fff;
+}
+#stats{
+  color: #fff;
+  
+}
+@media only screen and (max-width: 600px) {
+#register{
+  position: relative;
+  left: 150px;
+}
+.login{
+  position: relative;
+  left: 150px;
+}
+}
